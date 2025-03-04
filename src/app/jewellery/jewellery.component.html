@@ -1,0 +1,12 @@
+<!-- <p>jewellery works!</p> -->
+
+<div class="container">
+    @for(jewel of posts;track jewel.id)
+ {
+<div class="card">
+ <div>{{jewel.image}}</div>
+ <h3>{{jewel.title}}</h3>
+ <p class="price">{{jewel.price}}</p>
+
+</div>
+ }

@@ -1,0 +1,14 @@
+<!-- <p>productdetail works!</p> -->
+<div class="container">
+    @for(product of posts;track product.id)
+ {
+<div class="card">
+ <div>{{product.image}}</div>
+ <h3>{{product.title}}</h3>
+ <p class="price">{{product.price}}</p>
+ <p>{{product.description}}</p>
+ <div>{{product.rating}}</div>
+ <p>{{product.category}}</p>
+ <p>{{product.count}}</p>
+</div>
+ }
