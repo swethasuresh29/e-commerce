@@ -7,10 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class ProductdetailService {
 
-  private apiUrl='http://fakestoreapi.com/products';
-    constructor(private http:HttpClient) { }
-      getproduct(): Observable<any> {
-        return this.http.get(this.apiUrl);
-      }
-  }
+  // // private apiUrl='https://fakestoreapi.com/products/id';
+  //   constructor(private http:HttpClient) { }
+  //     getproduct(): Observable<any> {
+  //       return this.http.get(this.apiUrl);
+  //     }
+
+  constructor(private http:HttpClient) { }
+getproductbyid(id:string):Observable<any>{
+  return this.http.get("https://fakestoreapi.com/products/"+id)
+}
+
+}
 

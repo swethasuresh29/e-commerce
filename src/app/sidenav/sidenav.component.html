@@ -1,17 +1,23 @@
-<!-- <p>sidenav works!</p> -->
- <nav>
-<ul>
-<li><a routerLink="/article">Home</a></li>
-<li><a routerLink="/electronics">Electronics</a></li>
-<li><a routerLink="/jewellery">Jewellery</a></li>
-<li><a routerLink="/men">Men's clothing</a></li>
-<li><a routerLink="/women">Women's clothing</a></li>
-</ul>
+<nav>
+  <ul>
+    <li> @for (display of sidenavarray; track display; let  i = $index) {
+      <a routerLink="{{display.Url}}" [class.active]="selectedIndex === i"(click)="setIndex(i)">{{display.category}}</a>
+      }
+    </li>
+    <!-- <button routerLink="./">Back</button> -->
+  </ul>
 </nav>
+
+
+
+
 <!-- <nav>
-    <ul>
-      <li><a routerLink="/london">London</a></li>
-      <li><a routerLink="/paris">Paris</a></li>
-      <li><a routerLink="/tokyo">Tokyo</a></li>
-    </ul>
-  </nav> -->
+      <ul>
+        <li><a routerLink="/article">Home</a></li>
+        <li><a routerLink="/electronics">Electronics</a></li>
+        <li><a routerLink="/jewellery">Jewellery</a></li>
+        <li><a routerLink="/men">Men' clothing</a></li>
+        <li><a routerLink="/women">Women's clothing</a></li>
+      </ul>
+    </nav>  
+    -->

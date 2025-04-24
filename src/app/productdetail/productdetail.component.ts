@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductdetailService } from './productdetail.service';
+import { ActivatedRoute } from '@angular/router';
+import {Productmode} from './productmode';
 
 @Component({
   selector: 'app-productdetail',
@@ -8,16 +10,26 @@ import { ProductdetailService } from './productdetail.service';
   styleUrl: './productdetail.component.css'
 })
 export class ProductdetailComponent implements OnInit {
-posts:any[]=[];
-  data:any;
-  constructor(private dataService:ProductdetailService){}
+  productdata:any[]=[];
+  localAgents :Productmode[]= [];
+   
+  response:any;
+  constructor(private dataService:ProductdetailService,private activeRoute:ActivatedRoute){}
   ngOnInit() {
+
+// productId && this.dataService.getproductbyid('productId').subscribe((response)=>{
+// this.productdata=response;
     this.loadproductdata();
   }
   loadproductdata() {
-    this.dataService.getproduct().subscribe((responce) => {
-      this.posts = responce;
-      console.log(this.posts);
-    });
+  let productId1 = JSON.parse(this.activeRoute.snapshot.paramMap.get('productId')!);
+  this.dataService.getproductbyid(productId1).subscribe((response) => {
+    console.log(this.response);
+    //this.productdata=response;
+    this.localAgents.push(response);
+    console.log(this.localAgents);
+  });
 }
+
 }
+

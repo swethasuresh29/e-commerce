@@ -1,0 +1,32 @@
+
+    
+/* 
+.container {
+    height:100%;
+    /* background-size: cover; */
+    
+/* }
+background-image
+{
+    background-size: cover;
+    margin:0; */ 
+/* } */
+.image{
+height:40em; background-size:cover; width:auto;
+display:block;
+margin:0;
+     background-image:url('https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?t=st=1741424717~exp=1741428317~hmac=908661f92ce44aff98ae4fb53ccb50eca12c32830d2ffdf1900c6a20b58252d5&w=2000');
+     background-position:50% 50%;
+}
+.container
+{
+    text-align: center;
+    margin:20px;
+    border:20px;
+    padding:40px;
+
+}
+h1{
+    font-size: 50px;
+
+}

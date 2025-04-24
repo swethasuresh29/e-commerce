@@ -1,14 +1,46 @@
-<!-- <p>productdetail works!</p> -->
+
 <div class="container">
-    @for(product of posts;track product.id)
- {
-<div class="card">
- <div>{{product.image}}</div>
- <h3>{{product.title}}</h3>
- <p class="price">{{product.price}}</p>
- <p>{{product.description}}</p>
- <div>{{product.rating}}</div>
- <p>{{product.category}}</p>
- <p>{{product.count}}</p>
-</div>
- }
+    @for(data of localAgents;track data)
+    {
+        <div class="row">
+            <div class="column">
+                <img src={{data.image}}>
+                <div class="btn">
+                <button>Buy Now</button>&NonBreakingSpace;
+                <button>Add to Cart</button>
+                </div>
+            </div>
+
+                <div class="column">
+            <h1>{{data.title}}</h1>
+            <p style ="color:green">Special price</p>
+            <h4>Price:{{data.price}}</h4>
+           <p> <strong>Category:</strong>{{data.category}}<br>
+            <strong>Description:</strong>{{data.description}}</p>
+           <!-- <div class="rating"> <img [src]= "data.rating">
+           <strong> Count:{{data.count}}</strong>
+        </div> -->
+        </div>  
+        </div> 
+     }
+ </div>
+<!-- <div class="Container">  
+        <div class="row">
+            <div class="column">
+                <img  src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" >
+                <button>Buy Now</button>&NonBreakingSpace;
+                <button>Add to Cart</button>
+            </div>    
+        <div class="column">
+            <h1>Electronics</h1>
+            <p style ="color:green">Special price</p>
+            <h3>Price:89</h3>
+            <strong>Category:Women's Clothing</strong><br>
+            <strong>Description:"Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. 
+                Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.
+                Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look."<br>     
+        </strong>
+        <p>Count:679,Rate:3.8</p>    
+        </div> 
+     </div>      
+    </div>-->

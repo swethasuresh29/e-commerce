@@ -1,0 +1,30 @@
+<!-- <p>adminproductview works!</p> -->
+ <table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>description</th>
+            <th>category</th>
+            <th>image</th>
+            <th>rating</th>
+            <th>count</th>
+        </tr>
+    </thead>
+<tbody>
+@for(kk of posts;track $index){
+    <tr>
+           <td>{{kk.id}}</td>
+           <td>{{kk.title}}</td>
+           <td>{{kk.price}}</td>
+           <td>{{kk.description}}</td>
+           <td>{{kk.category}}</td>
+           <td>{{kk.image}}</td>
+           <td>{{kk.rating}}</td>
+           <td>{{kk.count}}</td>
+           <td></td>
+    </tr>
+} 
+</tbody>
+</table> 

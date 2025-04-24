@@ -1,22 +1,10 @@
-    
+   
 <div class="container">
-  @for(ff of posts;track $index)
+  @for(ff of newarray;track $index)
     {
  <div class="card"> 
-     <h1>{{ff}}</h1>  
+     <h1>{{ff.category}}</h1> 
+     <img routerLink="{{ff.direct}}" src={{ff.Url}} > 
   </div>
     } 
-  </div>
-    <!-- <router-outlet></router-outlet> -->
-    <!-- <div class="container">
-      @for(ele of posts;track ele.id)
-   {
-<div class="card">
-   <div class="img">{{ele.image}}</div>
-   <h3>{{ele.title}}</h3>
-   <div class="price">{{ele.price}}</div>
- </div>
-   } -->
- <!-- <article>
-   <router-outlet/>
- </article> -->
+  </div> 

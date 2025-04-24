@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { JewelleryService } from './jewellery.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-jewellery',
-  imports: [],
+  imports: [RouterLink ],
   templateUrl: './jewellery.component.html',
   styleUrl: './jewellery.component.css'
 })

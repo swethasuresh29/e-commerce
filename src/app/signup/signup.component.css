@@ -1,0 +1,41 @@
+
+.regform{
+    width: 500px;
+    margin:50px auto;
+    padding: 10px 20px 30px;
+    background-color: rgb(216, 62, 170);
+    color:white;
+    font-size: 30px;
+    border-radius :10px;
+}
+.regform h1
+{
+    color:beige;
+    text-align: center;
+}
+.tt{
+    display:block;
+}
+.input input{
+    width :100%;
+    font-size: 1.2em;
+    border: 1px solid #006D77;
+    box-shadow: 2px;
+    border-radius: 8px;
+    padding :10px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
+}
+input :focus{
+    background-color: #83c5BE;
+}
+.btn{
+    text-align: center;   
+}
+button{
+    background-color: #9be93b;
+    font-size: 30px;
+    color:white;
+    margin:10px;
+    padding :10px;
+}

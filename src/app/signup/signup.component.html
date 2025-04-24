@@ -1,1 +1,28 @@
-<p>signup works!</p>
+<!-- <p>signup works!</p> -->
+<div class="regform">
+ <form [formGroup]="SignupForm" (ngSubmit)="handleSubmit()">
+    <h1>Sign Up</h1>
+ <div class="input">
+<label class ="tt">FirstName</label>
+<input type="text" name="FirstName" formControlName="FirstName"/>
+</div>
+<div class="input">
+<label class="tt">LastName</label>
+<input type="text" name="LastName" formControlName="LastName"/>
+</div>
+<div class="input">
+<label class="tt"> Emailid</label>
+<input type="text" name="Emailid" formControlName="Emailid"/>
+</div>
+<div class="input">
+<label class="tt">Password</label>
+<input type="password" name="Password" formControlName="Password"/>
+</div>
+<div class="input">
+<label class="tt">Confirm Password</label>
+<input type="password" name="Confirm" formControlName ="Confirm"/>
+</div>
+<div class="btn">
+<button type="submit">Submit</button>
+</div>
+ </form> 

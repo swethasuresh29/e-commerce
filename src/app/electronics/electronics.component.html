@@ -1,11 +1,18 @@
 
     <div class="container">
+      <!-- let Counter = 0; -->
       @for(ele of posts;track ele.id)
    {
+    <!-- Counter=Counter+1; -->
 <div class="card">
-   <div class="img">{{ele.image}}</div>
+   <img routerLink ="/detail/{{ele.id}}" [src]="ele.image">
    <h3>{{ele.title}}</h3>
-   <p class="price">{{ele.price}}</p>
+   <div class="price"> <strong>{{ele.price}}</strong></div>
+
+   <!-- @if (ele.id > 3)   
+   {
+    '/n'
+    } -->
   
  </div>
-   }
+}

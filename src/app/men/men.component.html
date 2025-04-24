@@ -3,7 +3,7 @@
     @for(men of posts;track men.id)
  {
 <div class="card">
- <div>{{men.image}}</div>
+ <img routerLink ="/detail/{{men.id}}" src={{men.image}}>
  <h3>{{men.title}}</h3>
  <p class="price">{{men.price}}</p>
 </div>

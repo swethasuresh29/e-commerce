@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { WomenService } from './women.service';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-women',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './women.component.html',
   styleUrl: './women.component.css'
 })
